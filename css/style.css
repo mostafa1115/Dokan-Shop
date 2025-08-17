@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.active {
+  color: indianred !important;
+}
+
+nav .container .navbar-nav > li,
+nav .container .navbar-nav li > a {
+  transition: 0.6s;
+}
+nav .container .navbar-nav > li:not(.dropdown):hover,
+nav .container .navbar-nav .dropdown:hover > a {
+  background-color: indianred;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  transform: scale(0.8);
+}
+nav .container .navbar-nav > li:hover a {
+  color: white !important;
+}
+
+nav .container .navbar-nav .dropdown .dropdown-menu li {
+  transition: all 0.5s;
+}
+nav .container .navbar-nav .dropdown .dropdown-menu li:hover a {
+  opacity: 1;
+  background-color: indianred;
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+}
+
+.carousel .carousel-inner .carousel-caption {
+  bottom: 20%;
+}
+.carousel-inner::after {
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 50%);
+}
+.carousel .carousel-indicators .active {
+  background-color: indianred !important;
+}
+
+.icons {
+  color: #9c9c9c;
+}
+.lt-spacing {
+  letter-spacing: 2px;
+}
+
+#store h2 {
+  font-size: 3rem;
+  letter-spacing: 6px;
+}
+#latest-products .row a {
+  transition: 0.5s;
+}
+#latest-products .row .icons i:hover,
+.men-fashion .icons i:hover {
+  color: indianred;
+}
+#latest-products .row a:hover {
+  transform: scale(1.2);
+}
+.card-img-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(205, 92, 92, 0.925);
+  transform: scale(0);
+  transition: 0.6s ease-out;
+  text-align: center;
+}
+
+.card:hover .card-img-overlay {
+  transform: scale(1);
+}
+.form-control {
+  border: 1px solid rgba(0, 0, 0, 0.418);
+}
+.form-control:focus {
+  border: 1px solid rgba(0, 0, 0, 0.418);
+  outline: none;
+  box-shadow: 0 0 0 0;
+}
+footer .container .logo i {
+  font-size: 6rem;
+}
+footer .container .row > div a:hover {
+  color: indianred !important;
+}
+footer .container .icons a:hover {
+  color: rgb(79, 79, 240) !important;
+}
+.intro {
+  height: 37vh;
+  background: url("../image/about-bg.jpg");
+  background-size: cover;
+}
+.intro h1 {
+  font-size: min(3.2rem, 8vw);
+  letter-spacing: 0.2rem;
+}
+.intro p {
+  font-size: min(1rem, 3vw);
+}
+.space-between-sections {
+  margin: 6rem 0;
+}
+.about-us .row div h1 {
+  font-size: 3.2rem;
+}
+
+.p-grey {
+  font-weight: 400;
+  color: #777;
+}
+.our-services .row .card {
+  outline-style: outset;
+  outline-color: whitesmoke;
+}
+.go-maps {
+  outline: 8px;
+  outline-style: inset;
+  outline-color: whitesmoke;
+}
+.about-us .row .icons a {
+  transition: 0.6s;
+}
+.about-us .row .icons a:hover {
+  background-color: white !important;
+  color: black !important;
+}
+.intro-men {
+  height: 48vh;
+  background: url("../image/products-background.jpg");
+  background-size: cover;
+  position: relative;
+}
+.intro-men::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.fs-title {
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+.fashion .row .card {
+  transition: 0.5s;
+}
+.fashion .row .card:hover {
+  transform: scale(1.05);
+  background-color: #343a40;
+  color: white;
+}
+.line-spacing {
+  line-height: 1.3;
+}
