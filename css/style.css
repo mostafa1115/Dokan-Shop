@@ -107,6 +107,7 @@ footer .container .icons a:hover {
 .intro {
   height: 37vh;
   background: url("../image/about-bg.jpg");
+  /* background-position: center; */
   background-size: cover;
 }
 .intro h1 {
@@ -172,4 +173,9 @@ footer .container .icons a:hover {
 }
 .line-spacing {
   line-height: 1.3;
+}
+@media (max-width: 768px) {
+  .intro-men {
+    background-position: center;
+  }
 }
